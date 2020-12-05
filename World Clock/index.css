@@ -1,0 +1,51 @@
+html{
+    background: navy;
+    text-align: center;
+    font-size: 10px;
+}
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100vh;
+    align-items: stretch;
+    justify-content: space-evenly;
+    font-size: 2rem;
+}
+h1{
+    color: lightgrey;
+}
+.world-clocks{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.clock-face{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
+.local-clock, 
+.hong-kong-clock,
+.las-angeles-clock,
+.madrid-clock {
+    width: 20rem;
+    height: 20rem;
+    border: 10px solid white;
+    border-radius: 50%;
+}
+.hand{
+    width: 50%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform: rotate(90deg);
+    transform-origin: 100%;
+    transition: all 0.05s;
+    transition-timing-function: ease-in-out;
+    
+}
