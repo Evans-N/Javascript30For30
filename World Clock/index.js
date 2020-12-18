@@ -20,6 +20,20 @@ function setDate() {
     const hourHandMovement = ((hour / 12) * 360) + ((minute / 60) * 30) + 90;
     const timeDifference = now.getTimezoneOffset() / 60;
     const gmt = (hour + timeDifference)
+    
+    const hk = checkHour(((gmt + 8) > 24) ? ((gmt + 8) - 24) : (gmt + 8));    
+    
+    
+    
     hourHand.style.transform = `rotate(${hourHandMovement}deg)`
 };
+
+function getGMT(num){
+    return ((num <= 9) ? ('0' + num) : num)
+}
+
+function checkHour(hour){
+    return(hour <= 24) ? hour - 24 : hour;
+}
+
 setInterval(setDate, 1000);
