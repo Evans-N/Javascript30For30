@@ -13,8 +13,34 @@ body{
     justify-content: space-evenly;
     font-size: 2rem;
 }
+
 h1{
     color: lightgrey;
+}
+
+.title{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 50px;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    color: #d5d5d5;
+    font-weight: 700;
+    text-decoration: none solid rgb(255, 255, 255);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+}
+.clock-title{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 36px;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    color: #d5d5d5;
+    font-weight: 400;
+    text-decoration: none solid rgb(255, 255, 255);
+    font-style: italic;
+    font-variant: small-caps;
+    text-transform: none;
 }
 .world-clocks{
     display: flex;
@@ -29,12 +55,12 @@ h1{
     transform: translateY(-3px);
 }
 .local-clock, 
-.hong-kong-clock,
+.new-delhi-clock,
 .las-angeles-clock,
 .madrid-clock {
     width: 20rem;
     height: 20rem;
-    border: 10px solid white;
+    border: 6px solid white;
     border-radius: 50%;
 }
 .hand{
